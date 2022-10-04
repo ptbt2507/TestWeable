@@ -1,0 +1,450 @@
+@font-face {
+  font-family: Averta;
+  src: url(./assect/fonts/Averta-Semibold.otf);
+  font-weight: lighter;
+}
+  body{
+    font-family: Averta, sans-serif ;
+  }
+  ul{
+    padding-left: 0;
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  .img-wrap {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding-top: 56.25%;
+}
+.img-wrap img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    transform: translateZ(0);
+    margin: 0 auto;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+  /* w-header */
+.w-header a{
+  color: #fff;
+  text-decoration: none;
+}
+/* w-nav */
+.w-nav{
+  border-bottom: 1px solid black;
+}
+.w-nav .nav-pc .icons{
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.w-nav .nav-pc .icons  li{
+  padding: 0 1rem;
+}
+.w-nav .nav-pc a{
+  color: #000;
+}
+.w-nav .nav-pc .icons i,
+.w-nav .nav-pc .icons a{
+  font-size: 1.6rem;
+}
+.w-nav .nav-pc .nav .nav-link{
+  margin: 0 1.2rem;
+}
+.w-nav  .nav-pc .nav .nav-link.show{
+  border-bottom: 2px solid black;
+}
+
+.w-nav .nav-pc .nav .nav-link:hover{
+  color: black;
+}
+
+.w-nav .nav-mobile .menu i{
+  font-size: 2rem;
+}
+.w-nav .nav-mobile .menu .menu-list a{
+  color: #000;
+}
+.w-nav .nav-mobile .menu .menu-list{
+  position: fixed;
+    left: -100%;
+    top: 4rem;
+    right: 100%;
+    background-color: white;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    transition: .2s ease;
+}
+.w-nav .nav-mobile .menu .menu-list a{
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.w-nav .nav-mobile .menu .menu-list a::after{
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: -25%;
+  left: 0;
+  border-bottom: 1px solid rgb(211, 205, 205);
+  width: 100%;
+}
+.w-nav .nav-mobile .menu .menu-list.show {
+  left: 0;
+  opacity: 1;
+}
+
+.w-navbar .nav-mobile #toggleClose.show {
+  left: 1rem;
+  top: 3rem;
+}
+
+.w-navbar .nav-mobile #toggleOpen.show {
+  display: none;
+  left: -100%;
+}
+
+/* w-breadcrumbs */
+.w-breadcrumbs{
+  background-color: rgb(245, 234, 234);
+}
+.w-breadcrumbs a{
+  color: #000;
+}
+/* w-bracelet */
+.w-bracelet .dt-tabImg .nav button{
+  padding-top: 90%;
+  border-radius: unset;
+}
+.w-bracelet .dt-tabImg .nav button img, .w-productDetail .mb-tabImg .nav button img{
+  opacity: 0.5;
+}
+.w-bracelet .dt-tabImg .nav button.active img, .w-productDetail .mb-tabImg .nav button.active img{
+  opacity: 1;
+}
+.w-bracelet .dt-tabImg .tab-content .tab-pane{
+  padding-top: 83%;
+  
+}
+.w-bracelet .dt-tabImg .nav {
+  gap: 0.5rem;
+}
+.w-bracelet .mb-tabImg .nav {
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+.w-bracelet .mb-tabImg .nav button {
+ width: calc(100% / 4 - 0.5rem);
+ padding-top: 22%;
+}
+.w-bracelet .mb-tabImg .nav {
+  margin-top: 1rem ;
+ }
+
+ .w-bracelet .icons a i{
+  color: rgb(224, 144, 40);
+  font-size: 2rem;
+ }
+ .w-bracelet .frankin{
+  border-radius: 2px;
+  border: 1px solid rgb(197, 190, 190);
+ }
+ .w-bracelet .frankin .star .bi,
+ .w-bracelet .frankin .price{
+  color: rgb(224, 144, 40);
+ }
+ .w-bracelet .frankin .price{
+  font-size: 1.7rem ;
+ }
+ .w-bracelet .frankin .stocking{
+  color: rgb(14, 146, 65);
+ }
+ .w-bracelet .frankin .sile-list .bx{
+  font-size: 1.6rem;
+ }
+ .w-bracelet .frankin .number {
+  cursor: pointer;
+  width: 30%;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgb(97, 93, 93);
+}
+.w-bracelet .frankin .number .minus, .w-bracelet .frankin .number .plus {
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  color: rgb(97, 93, 93);
+  width: 30%;
+  text-align: center;
+}
+.w-bracelet .frankin .number input {
+  text-align: center;
+  border: none;
+  width: 70%;
+  color: rgb(97, 93, 93);
+  display: inline-block;
+  vertical-align: middle;
+  outline: none;
+}
+.w-bracelet .frankin .add-cart button{
+  background-color: black;
+  border-radius: unset;
+  width: 60%;
+}
+.w-bracelet .frankin .buy .btn{
+  border-radius: unset;
+}
+.w-bracelet .frankin .buy .now{
+  width: 40%;
+  background-color: rgb(224, 144, 40);
+}
+.w-bracelet .frankin .size-mobi .sizes{
+  border: 2px solid #958686;
+}
+.w-bracelet .frankin .size-mobi span,
+.w-bracelet .frankin .size-mobi i{
+  padding: 0 1rem;
+}
+.w-bracelet .frankin .buy .order{
+  width: 50%;
+}
+.w-bracelet .footer-frankin{
+  background-color: #000;
+} 
+.w-bracelet .footer-frankin li{
+  color: #fff;
+  text-align: center;
+  min-width: 25%;
+}
+.w-bracelet .footer-frankin img{
+  margin-bottom: 0.5rem;
+}
+.w-bracelet .footer-frankin li p{
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+.w-bracelet .question{
+  bottom: 3%;
+  right: 3%;
+}
+.w-bracelet .question i{
+  font-size: 3rem;
+}
+@media screen and (max-width: 991px) {
+  .w-bracelet .frankin h2{
+    font-size: 1.4rem;
+  }
+  .w-bracelet .footer-frankin li{
+  }
+
+}
+/* w-describe */
+.w-describe .nav .nav-link{
+  margin: 0 1.2rem;
+  color: rgb(121, 112, 112) ;
+}
+.w-describe .nav .nav-link.show{
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.w-describe .nav .nav-link:hover{
+  color: black;
+}
+
+.w-describe .accordion{
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.w-describe .accordion .card {
+  border: none;
+  border-bottom: 1px solid rgb(197, 195, 195);
+}
+
+.w-describe .accordion .card-noborder {
+  border-bottom: none;
+}
+
+.w-describe .accordion .card .card-header button {
+  display: flex;
+  justify-content: space-between;
+  color: #0F1419;
+  text-decoration: none;
+  padding: 0.375rem 0;
+}
+.w-describe .accordion .card .card-header{
+  padding: 0.75rem 0;
+}
+
+.w-describe .accordion .card .card-header button i{
+  transition: .5s;
+}
+.w-describe .accordion .card .card-header button:not(.collapsed) i{
+  transform: rotate(180deg);
+}
+
+.w-describe .accordion .card .card-header button:focus {
+  box-shadow: none;
+}
+
+.w-describe .accordion .card .card-header {
+  background-color: #fff;
+  border: none;
+}
+.w-describe .accordion .card .card-body{
+  padding: 0;
+}
+.w-describe .accordion .card .card-body button{
+  padding: 0 0 0 2rem;
+  color: rgb(150, 143, 143);
+}
+.w-describe .logo-img img,
+.w-describe .logo2-img img{
+  width: 50%;
+}
+
+.w-describe .logo-img{
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.w-describe .logo2-img{
+  top: 50%;
+  right: -6%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 991px) {
+  .w-describe .accordion {
+    max-width: 100%;}
+    .w-describe .nav .nav-link{
+      margin: 0;
+    }
+    .w-describe .nav .navbar{
+      padding: 0;
+    }
+    .w-describe .navbar-expand .navbar-nav .nav-link{
+      font-size: 0.8rem;
+    }
+}
+/* w-product */
+.w-product{
+  background-color: rgb(238, 234, 234);
+}
+.w-product .content:hover{
+  color: #ffff;
+  background-color: #000;
+}
+.w-product button{
+  height: 19%;
+  border-radius: 50px;
+  border: 1px solid #c9bdbd;
+  top: 35%;
+  transform: translate(0, -50%);
+  position: absolute;
+  font-size: 2rem;
+  margin: 0 -2rem;
+}
+.w-product .prev-arrow{
+    left: -4%;
+
+}
+.w-product .next-arrow{
+  right: -4%;
+
+}
+.w-product .content p{
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  .w-product h2{
+    font-size: 1.4rem;
+  }
+  
+
+}
+/* w-footer */
+.w-footer{
+  position: relative;
+  background-image: url(./assect/img/Rectangle\ 36\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 4rem 0;
+}
+.w-footer .img-logo{
+  margin-top: -4rem;
+}
+.w-footer i{
+  color: #fff;
+  font-size: 2rem;
+
+}
+.w-footer a{
+  color: #fff;
+}
+.w-footer  h6{
+  margin-bottom: 2rem;
+}
+
+.w-footer .form-group{
+  width: 60%;
+}
+.w-footer .form-group input{
+  border-radius: unset;
+}
+.w-footer .visa i{
+  opacity: 0.5;
+}
+.w-footer .visa .text-warning{
+  margin-right: -1rem;
+}
+.w-footer button{
+  width: 40%;
+  background-color: rgb(224, 144, 40);
+  border-radius: unset;
+  border: unset;
+}
+.w-footer .img-tHuong{
+  bottom: 0;
+  right: 0;
+  min-width: 30%;
+}
+@media screen and (max-width: 991px){
+  .w-footer{
+    height: auto;
+  }
+  .w-footer h6 {
+    margin-bottom: 0;
+}
+.w-footer .form-group {
+  margin-bottom: 0 !important;
+}
+.w-footer .img-logo{
+  text-align: center;
+}
+}
+/* w-end */
+.w-end{
+  background-color: #000;
+  color: #fff;
+}
+
+
